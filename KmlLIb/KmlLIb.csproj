@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DegreeFormatter.cs" />
     <Compile Include="Model\Document.cs" />
     <Compile Include="Model\Kml.cs" />
     <Compile Include="Model\Placemark.cs" />

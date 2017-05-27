@@ -15,6 +15,6 @@ namespace Kml
 
         /// <remarks/>
         [XmlText]
-        public string[] Text { get; set; }
+        public string Text { get; set; }
     }
 }

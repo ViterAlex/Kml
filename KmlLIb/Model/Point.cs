@@ -14,12 +14,15 @@ namespace Kml
         [XmlElement("coordinates")]
         public string Coordinates { get; set; }
 
+        /// <summary>
+        /// Широта
+        /// </summary>
         [XmlIgnore]
         public double Lat
         {
             get
             {
-                return !IsGoodCoords() ? double.NaN : double.Parse(Coordinates.Split(',')[0], CultureInfo.InvariantCulture);
+                return !IsGoodCoords() ? double.NaN : double.Parse(Coordinates.Split(',')[1], CultureInfo.InvariantCulture);
             }
         }
 
@@ -35,12 +38,33 @@ namespace Kml
             return result;
         }
 
+        /// <summary>
+        /// Долгота
+        /// </summary>
         [XmlIgnore]
         public double Lon
         {
             get
             {
-                return !IsGoodCoords() ? double.NaN : double.Parse(Coordinates.Split(',')[1], CultureInfo.InvariantCulture);
+                return !IsGoodCoords() ? double.NaN : double.Parse(Coordinates.Split(',')[0], CultureInfo.InvariantCulture);
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"{string.Format(new DegreeFormatter(), "{0}", Lon)} {string.Format(new DegreeFormatter(), "{0}", Lat)}";
+        }
+
+        public string ToString(string type)
+        {
+            switch (type)
+            {
+                case "lat":
+                    return string.Format(new DegreeFormatter(), "{0:NS}", Lat);
+                case "lon":
+                    return string.Format(new DegreeFormatter(), "{0:WE}", Lon);
+                default:
+                    return ToString();
             }
         }
     }

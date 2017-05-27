@@ -17,5 +17,10 @@ namespace Kml {
         public List<Data> ExtendedData{ get; set; }
 
         public Point Point { get; set; }
+
+        public override string ToString()
+        {
+            return Point.ToString();
+        }
     }
 }
