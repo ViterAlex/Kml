@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KmlLIb", "KmlLIb\KmlLIb.csproj", "{A8F8B19C-957D-40B1-81BE-0DEF05D92A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KmlViewer", "KmlViewer\KmlViewer.csproj", "{9BFC0AFE-A883-41EB-BF70-A97B93A8B8FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KmlLIbTest", "KmlLIbTest\KmlLIbTest.csproj", "{F6A83736-0C5D-472F-8596-4F404F2D0C77}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8F8B19C-957D-40B1-81BE-0DEF05D92A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F8B19C-957D-40B1-81BE-0DEF05D92A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F8B19C-957D-40B1-81BE-0DEF05D92A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F8B19C-957D-40B1-81BE-0DEF05D92A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFC0AFE-A883-41EB-BF70-A97B93A8B8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFC0AFE-A883-41EB-BF70-A97B93A8B8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFC0AFE-A883-41EB-BF70-A97B93A8B8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFC0AFE-A883-41EB-BF70-A97B93A8B8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A83736-0C5D-472F-8596-4F404F2D0C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A83736-0C5D-472F-8596-4F404F2D0C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A83736-0C5D-472F-8596-4F404F2D0C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A83736-0C5D-472F-8596-4F404F2D0C77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
