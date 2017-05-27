@@ -21,7 +21,10 @@ namespace KmlViewer.Controls
             {
                 pictureBox1.LoadAsync(Path.GetFullPath(dataValue.ValueImage.Source));
             }
-            textBox1.Text = dataValue.Text;
+
+            if (string.IsNullOrEmpty(dataValue.Text)) return;
+
+            textBox1.Text = dataValue.Text.Replace("\n", "\r\n");
 
         }
     }
