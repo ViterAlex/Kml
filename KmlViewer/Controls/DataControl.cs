@@ -5,7 +5,7 @@ namespace KmlViewer.Controls
 {
     public partial class DataControl : UserControl
     {
-        public DataControl()
+        private DataControl()
         {
             InitializeComponent();
         }

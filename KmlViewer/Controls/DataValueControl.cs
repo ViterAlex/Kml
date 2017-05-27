@@ -11,11 +11,6 @@ namespace KmlViewer.Controls
             InitializeComponent();
         }
 
-        public DataValueControl(DataValue dataValue)
-        {
-            BuildUp(dataValue);
-        }
-
         public void BuildUp(DataValue dataValue)
         {
             if (dataValue.ValueImage == null || !File.Exists(Path.GetFullPath(dataValue.ValueImage.Source)))

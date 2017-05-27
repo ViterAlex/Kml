@@ -53,11 +53,11 @@ namespace Kml
             switch (format)
             {
                 case "NS":
-                    return string.Format("{0}°{1:00}'{2:00}\".{3:000} {4}", degrees, minutes, seconds, milliseconds, isNeg ? "Ю" : "С");
+                    return string.Format("{0}°{1:00}'{2:00}\".{3} {4}", degrees, minutes, seconds, milliseconds, isNeg ? "Ю" : "С");
                 case "WE":
-                    return string.Format("{0}°{1:00}'{2:00}\".{3:000} {4}", degrees, minutes, seconds, milliseconds, isNeg ? "З" : "В");
+                    return string.Format("{0}°{1:00}'{2:00}\".{3} {4}", degrees, minutes, seconds, milliseconds, isNeg ? "З" : "В");
                 default:
-                    return string.Format("{4}{0}°{1:00}'{2:00}\".{3:000}", degrees, minutes, seconds, milliseconds, isNeg ? "-" : "");
+                    return string.Format("{4}{0}°{1:00}'{2:00}\".{3}", degrees, minutes, seconds, milliseconds, isNeg ? "-" : "");
             }
         }
     }

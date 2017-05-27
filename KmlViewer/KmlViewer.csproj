@@ -56,16 +56,22 @@
     <Compile Include="Controls\DataControl.Designer.cs">
       <DependentUpon>DataControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\StyleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\StyleControl.Designer.cs">
+      <DependentUpon>StyleControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PointControl.cs">
+    <Compile Include="Controls\PointControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PointControl.Designer.cs">
+    <Compile Include="Controls\PointControl.Designer.cs">
       <DependentUpon>PointControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -76,10 +82,13 @@
     <EmbeddedResource Include="Controls\DataValueControl.resx">
       <DependentUpon>DataValueControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StyleControl.resx">
+      <DependentUpon>StyleControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PointControl.resx">
+    <EmbeddedResource Include="Controls\PointControl.resx">
       <DependentUpon>PointControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -1,11 +1,11 @@
 ﻿using System.Windows.Forms;
 using Point = Kml.Point;
 
-namespace KmlViewer
+namespace KmlViewer.Controls
 {
     public partial class PointControl : UserControl
     {
-        public PointControl()
+        private PointControl()
         {
             InitializeComponent();
         }
@@ -18,8 +18,8 @@ namespace KmlViewer
 
         private void BuildUp(Point point)
         {
-            lonTextBox.Text = point.ToString("lon");
-            latTextBox.Text = point.ToString("lat");
+            lonLabel.Text = point.ToString("lon");
+            latLabel.Text = point.ToString("lat");
         }
     }
 }
